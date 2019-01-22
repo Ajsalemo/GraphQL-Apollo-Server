@@ -1,0 +1,38 @@
+{
+  "name": "graphql-apollo-server",
+  "version": "1.0.0",
+  "description": "An application to test out graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajsalemo/GraphQL-Apollo-Server.git"
+  },
+  "keywords": [
+    "node",
+    "graphql",
+    "postgres",
+    "api",
+    "es6",
+    "babel",
+    "javascript",
+    "apollo",
+    "database"
+  ],
+  "author": "Anthony Salemo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ajsalemo/GraphQL-Apollo-Server/issues"
+  },
+  "homepage": "https://github.com/Ajsalemo/GraphQL-Apollo-Server#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.3.0",
+    "babel-core": "^6.26.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "graphql-server-express": "^1.4.0"
+  },
+    "presets": ["@babel/preset-env"]
+}
