@@ -4,7 +4,8 @@
   "description": "An application to test out graphql",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js"
   },
   "repository": {
     "type": "git",
@@ -28,11 +29,14 @@
   },
   "homepage": "https://github.com/Ajsalemo/GraphQL-Apollo-Server#readme",
   "dependencies": {
-    "@babel/preset-env": "^7.3.0",
-    "babel-core": "^6.26.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "graphql-server-express": "^1.4.0"
+    "graphql-server-express": "^1.4.0",
+    "graphql-tools": "^4.0.3"
   },
-    "presets": ["@babel/preset-env"]
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "graphql": "^14.1.1"
+  }
 }
