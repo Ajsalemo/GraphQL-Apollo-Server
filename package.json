@@ -32,7 +32,10 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "graphql-server-express": "^1.4.0",
-    "graphql-tools": "^4.0.3"
+    "graphql-tools": "^4.0.3",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
