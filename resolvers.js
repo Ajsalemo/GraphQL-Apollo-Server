@@ -1,5 +1,5 @@
 export default {
     Query: {
-        hello: (parent, arg, context) => 'hi'
+        hello: (parent, arg, { models }) => 'hi'
     }
 };

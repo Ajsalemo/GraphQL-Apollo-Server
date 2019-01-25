@@ -5,7 +5,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { graphiqlExpress, graphqlExpress } from 'graphql-server-express'
 import { makeExecutableSchema } from 'graphql-tools';
-
+import models from './models';
 import typeDefs from './schema';
 import resolvers from './resolvers';
 
@@ -27,13 +27,18 @@ app.use('/graphiql', graphiqlExpress({
 
 app.use('/graphql', 
     bodyParser.json(), 
-    graphqlExpress({ schema })
+    graphqlExpress({ 
+        schema,
+        context: {
+            models
+        }
+    })
 );
 
 // ------------------------------------------------------------------------------------------- //
 // ------------------------------------------------------------------------------------------- //
 
-app.listen(PORT);
+models.sequelize.sync(() => app.listen(PORT));
 
 // ------------------------------------------------------------------------------------------- //
 // ------------------------------------------------------------------------------------------- //
