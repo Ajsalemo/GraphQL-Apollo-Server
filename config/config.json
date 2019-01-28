@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "root",
-    "password": "null",
+    "username": "apollo_db_admin",
+    "password": "root",
     "database": "apollo_db",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "port": "5432"
   },
   "test": {
-    "username": "root",
-    "password": "null",
+    "username": "apollo_db_admin",
+    "password": "root",
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": "null",
+    "username": "apollo_db_admin",
+    "password": "root",
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
