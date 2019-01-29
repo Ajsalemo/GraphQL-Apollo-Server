@@ -7,12 +7,13 @@ export default `
     }
 
     type Query {
+        allUsers: [User!]! 
         getUser(username: String!): User
     }
 
     type Mutation {
         createUser(username: String!): User
-        updateUser(username: String!): [Int!]!
+        updateUser(username: String!, newUsername: String!): [Int!]!
         deleteUser(username: String!): Int!
     }
 `;
